@@ -1,13 +1,14 @@
 <template>
-  <main>
-    <img v-bind:src="$store.state.imgsrc" alt="지역이미지">
-    <p v-text="$store.state.desc"></p>
-  </main>
+  <footer>
+    <address>
+        서울시 강남구 역삼동 119 뷰엑스B
+    </address>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: 'MainArea',
+  name: 'InfoArea',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -18,10 +19,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  main {
-    padding: 10px;
-  }
-  main img {
-    width: 100%;
+  footer {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
   }
 </style>
